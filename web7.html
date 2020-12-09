@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Height,width,borders and background</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+        #firstPara
+        {
+            background-color: red;
+            height: 1200 px;
+            width: 100px;
+            /*border-width: 4px;
+            border-color: green;
+            border-style: solid;*/
+            /*We are writing an alternative for the above border attributes*/
+            border: 4px solid green;
+            border-radius: 9px;
+
+        }
+        #secondPara{
+           background-color: rgba(58, 243, 98, 0.801);
+           height: 100px;
+           width: 155px;
+           border-top:2px solid violet;
+           border-right: 2px solid yellow;
+           border-bottom: 2px solid black;
+           border-left: 2px solid brown;
+           border-radius: 11px;
+        }
+        #thirdPara{
+            background-image: url(https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=689&q=80);
+            height: 900px;
+            width: 700px;
+            border:2px solid red;
+            color:cyan;
+            background-repeat:no-repeat;
+            background-position: left top;
+          
+        }
+        </style>
+    </head>
+    <body>
+    <h3>This is heading </h3>
+    <p id ="firstPara">This is a paragraph</p>
+    <p id="secondPara">This is my second para</p>
+    <p id="thirdPara">This is my third paragraph</p>
+    </body>
+</html>
