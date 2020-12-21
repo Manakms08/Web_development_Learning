@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+    <!--Position property-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Document</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            .container{
+                border: 2px solid black;
+                background-color: khaki;
+                height: 3444px;
+            }
+            /*Css position static(default),relative,absolute,fixed,sticky*/
+           .box{
+               display: inline-block;
+               border: 2px solid red;
+               width: 150px;
+               height: 150px;
+               margin: 2px; 
+
+           }
+           #box_3
+           {
+               /*Relative: relative to its normal position (Gap in previous position)
+               and will leave a gap from its normal position
+               position:relative;
+               top: 34px;
+               left:34px;*/
+               /*absolute: relative to its first parent*/
+               /*position: absolute;
+               left: 50px;*/
+               /*position: fixed;/*Gets fixed even after scrolling it remains fixed to screen and is displayed.
+               right: 4px;
+               bottom: 4px;*/
+               position: stick;
+               top: 20px;
+           }
+        </style>
+    </head>
+    <body>
+     <div class="container">
+      <div class="box" id="box_1">1</div>
+      <div class="box" id="box_2">2</div>
+      <div class="box" id="box_3">Chat with Us</div>
+      <div class="box" id="box_4">4</div>
+    </div>
+    </body>
+</html>
