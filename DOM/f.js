@@ -1,0 +1,1 @@
+document.querySelector("H1").innerHTML="Goodbye"; 
