@@ -9,11 +9,31 @@ const fruits= new mongoose.Schema({
     review: String,
     
 });
-
 const Fr= new mongoose.model("fruit",fruits);
-
-const doc = new Fr({
+const createDocument= async()=>{
+try{
+const doc1 = new Fr({
     name: "Apple",
     score: 8,
     review: "Awesome"
 });
+const doc2 = new Fr({
+    name: "Orange",
+    score: 6,
+    review: "Sour"
+});
+const doc3 = new Fr({
+    name: "Banana",
+    score: 9,
+    review: "Magnificent"
+});
+const result= await Fr.insertMany([doc1,doc2,doc3]);
+console.log(result);
+}catch(err){
+    console.log(err);
+}
+}
+createDocument();
+
+
+
