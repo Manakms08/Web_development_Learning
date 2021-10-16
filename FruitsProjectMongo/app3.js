@@ -35,7 +35,7 @@ console.log(result);
 }
 //createDocument();
 //Reading
-const getDocument=async()=>{
+/*const getDocument=async()=>{
 try{
    const v= await Fr.find();
    console.log(v);
@@ -43,7 +43,23 @@ try{
        console.log(err);
    }
 }
-getDocument();
-
-
+getDocument();*/
+const gg=async()=>{
+    try{
+     const a=await Fr.find({score: {$lt: 9}}).select({name:1});
+     console.log(a);
+    }catch(err){
+        console.log(err);
+    }
+}
+gg();
+const func=async()=>{
+    try{
+     const a=await Fr.find({score: {$in:[9,8]}});
+     console.log(a);
+    }catch(err){
+        console.log(err);
+    }
+}
+func();
 
